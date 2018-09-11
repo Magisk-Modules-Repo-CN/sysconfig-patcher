@@ -3,5 +3,5 @@ name=Sysconfig Patcher (sp)
 version=2018.8.29
 versionCode=201808290
 author=VR25 @ xda-developers
-description=Systemlessly patches all relevant XML files in /system/etc/sysconfig for data and battery savings & auto-re-patches across ROM/GApps updates. Thus, these packages (i.e., Google Play Services) will no longer have unrestricted access to data & power intensive resources without the user's explicit consent. Doze and data saver will act upon them. Important packages such as Qualcomm's, Download Manager, etc., are not affected. MagicGApps module is also supported. Note: after disabling/reenabling the module, changes take effect only after two reboots. This is not a bug nor can it be solved at this point (Magisk's limitation).
+description=Systemlessly式修补/system/etc/sysconfig中的所有相关XML文件，以便在ROM/GApps更新中节省数据和节省电池以及自动重新补丁。因此，未经用户明确同意，这些包（即Google Play服务）将不再无限制地访问数据和功率密集型资源。打盹和数据保护程序将对他们采取行动。 Shell，Qualcomm，Download Manager等重要软件包不受影响。并支持MagicGApps模块。   注意: 在禁用/重新启用模块后，更改仅在两次重新启动后生效。这不是一个错误，也不能解决这个问题 (Magisk的限制)
 minMagisk=1500
