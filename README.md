@@ -54,7 +54,7 @@
 - 模块ID恢复为 `sysconfig-patcher`
 - 模块模板 `17000`，附加功能
 - 不再需要重新启动两次以在禁用/重新启用模块后应用更改
-- 支持大于 `2018.9.23` 的MagicGApps版本
+- 支持≥ `2018.9.23` 的MagicGApps版本
 - 更新了构建和调试工具
 - 更新文档
 *发行说明：如果您有 `/data/adb/magisk_simple/system/etc/sysconfig/`，请使用TWRP文件管理器删除它(最好在升级之前)。 Oreo和Pie用户(甚至一般用户)可能需要禁用Google设备管理员才能按预期工作。这个相当不方便的要求与Sysconfig Patcher无关。这是谷歌的事情。
