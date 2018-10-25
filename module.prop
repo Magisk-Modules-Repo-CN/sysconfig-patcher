@@ -3,5 +3,5 @@ name=Sysconfig Patcher
 version=2018.10.22
 versionCode=201810220
 author=VR25 @ xda-developers
-description=Systemlessly式修补/system/etc/sysconfig中的所有相关XML文件，以便在ROM/GApps更新中节省数据和节省电池以及自动重新补丁。因此，未经用户明确同意，这些包（例如Google Play服务）将不再无限制地访问数据和功率密集型资源。打盹和数据保护程序将对他们采取行动。 Shell，Qualcomm，Download Manager等重要软件包不受影响。并支持MagicGApps模块(需版本大于2018.9.23)
+description=Systemlessly式修补/system/etc/sysconfig中的所有相关XML文件，以便在ROM/GApps更新中节省数据和节省电池以及自动重新补丁。因此，未经用户明确同意，这些包（例如Google Play服务）将不再无限制地访问数据和功率密集型资源。打盹和数据保护程序将对他们采取行动。 Shell，Qualcomm，Download Manager等重要软件包不受影响。并支持MagicGApps模块(需版本≥2018.9.23)
 minMagisk=1500
