@@ -1,62 +1,74 @@
-# Sysconfig Patcher (sp)
-## Copyright (C) 2017-2018, VR25 @ xda-developers
-### License: GPL v3+
+# Sysconfig Patcher
+## README.md
+### Copyright (C) 2017-2018, VR25 @ xda-developers
+#### License: GPL v3+
 
 
 
 ---
-#### 免责声明
+#### DISCLAIMER
 
-- 本软件以 "现状" 来提供，希望它能有用，但不作任何保证。 在安装/更新之前，请务必阅读参考资料。虽然没有猫受到伤害* ，如因使用/滥用而引致任何问题，我概不负责。
-- GNU通用公共许可证第3版或更新的副本将随每个版本一起提供。 请在使用，修改和/或共享此作品的任何部分之前阅读它。
-- 为了防止欺诈，不要镜像任何与项目相关的链接。
+This software is provided as is, in the hope that it will be useful, but without any warranty. Always read/reread this reference prior to installing/upgrading. While no cats have been harmed, I assume no responsibility under anything which might go wrong due to the use/misuse of it.
 
-- \* 原文为 "While no cats have been harmed" 如果你有更好的翻译,请通过issue告诉我
----
-#### 描述
+A copy of the GNU General Public License, version 3 or newer ships with every build. Please, read it prior to using, modifying and/or sharing any part of this work.
 
-- Systemlessly式修补/system/etc/sysconfig中的所有相关XML文件，以便在ROM/GApps更新中节省数据和节省电池以及自动重新补丁。因此，未经用户明确同意，这些包（即Google Play服务）将不再无限制地访问数据和功率密集型资源。打盹和数据保护程序将对他们采取行动。 Shell，Qualcomm，Download Manager等重要软件包不受影响。并支持MagicGApps模块。
-
-
----
-#### 必备条件
-
-- Magisk v15+
+To prevent fraud, DO NOT mirror any link associated with this project; DO NOT share ready-to-flash builds (zips) online!
 
 
 
 ---
-#### 设置步骤
+#### DESCRIPTION
 
-1. 删除任何/所有类似的模块
-2. 从Magisk Manager或TWRP安装
-3. 重启
-
-注意: 在禁用/重新启用模块后，更改仅在两次重新启动后生效。这不是一个错误，也不能解决这个问题 (Magisk的限制)
+Systemlessly patches all relevant XML files in `/system/etc/sysconfig/` for data and battery savings & auto-re-patches across ROM/GApps updates. Thus, packages listed in these files (i.e., `Google Play Services`) will no longer have unrestricted access to data & power intensive resources without the user's explicit consent. `Doze` and `data saver` will act upon them. Core packages such as `Qualcomm's`, `Download Manager`, `Shell`, etc., are not affected. `MagicGApps` module, versions greater than 2018.9.23 are also supported.
 
 
 
 ---
-#### 在线支持
+#### PRE-REQUISITES
 
-- [Facebook Support Page](https://facebook.com/VR25-at-xda-developers-258150974794782)
-- [Git Repository](https://github.com/Magisk-Modules-Repo/sysconfig-patcher)
-- [XDA Thread](https://forum.xda-developers.com/apps/magisk/module-sysconfig-patcher-t3668435)
+- Magisk 15.0-17.2
 
 
 
 ---
-#### 最新变化
+#### SETUP STEPS
+
+1. Remove any/all similar module(s).
+2. Install/upgrade from Magisk Manager or TWRP.
+3. Reboot.
+
+Note: Oreo and Pie users (or even users in general) may need to disable Google device administrators for things to work as expected. This rather inconvenient requirement has nothing to do with Sysconfig Patcher. It's a Google thing.
+
+
+
+---
+#### ONLINE SUPPORT
+
+- [Facebook Page](https://facebook.com/VR25-at-xda-developers-258150974794782/)
+- [Git Repository](https://github.com/Magisk-Modules-Repo/sysconfig-patcher/)
+- [XDA Thread](https://forum.xda-developers.com/apps/magisk/module-sysconfig-patcher-t3668435/)
+
+
+
+---
+#### LATEST CHANGES
+
+**2018.10.22 (201810220)**
+- Major optimizations
+- Magisk `15.0-17.2` support
+- Module ID reverted to `sysconfig-patcher`
+- Module template `17000`, with extras
+- Rebooting twice to apply changes after disabling/re-enabling the module is no longer necessary.
+- Support for MagicGApps versions greater than `2018.9.23`
+- Updated building and debugging tools
+- Updated documentation
+* Release notes: if you have `/data/adb/magisk_simple/system/etc/sysconfig/`, remove it with TWRP file manager (preferably before upgrading). Oreo and Pie users (or even users in general) may need to disable Google device administrators for things to work as expected. This rather inconvenient requirement has nothing to do with Sysconfig Patcher. It's a Google thing.
 
 **2018.8.29 (201808290)**
-- 改善兼容性
-- 使用Magisk模块模板1500
-- 更新文档
+- Improved compatibility
+- Magisk Module Template 1500
+- Updated documentation
 
 **2018.8.20 (201808200)**
-- 完全重新设计
-- *发行说明*：“sp”是新模块ID。如果此更新未在Magisk Manager中显示，请卸载当前版本。对官方Magisk beta版本的全面支持又回来了。
-
-**2018.8.14 (201808140)**
-- 修复MM的安装失败 (Android P，Magisk 16.7)
-- 其他修复和优化
+- Full redesign
+- *Release notes*: "sp" is the new module ID. If this update is not displayed in Magisk Manager, uninstall the current version. Full support for official Magisk beta builds is back.
